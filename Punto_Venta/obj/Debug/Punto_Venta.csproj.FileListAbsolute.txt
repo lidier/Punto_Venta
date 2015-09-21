@@ -14,3 +14,6 @@ C:\Users\Lidier\Documents\GitHub\punto_de_venta\Punto_Venta\Punto_Venta\obj\Debu
 C:\Users\Lidier\Documents\Visual Studio 2013\Projects\Punto_Venta\Punto_Venta\bin\Debug\Punto_Venta.exe.config
 C:\Users\Lidier\Documents\Visual Studio 2013\Projects\Punto_Venta\Punto_Venta\obj\Debug\Punto_Venta.exe
 C:\Users\Lidier\Documents\Visual Studio 2013\Projects\Punto_Venta\Punto_Venta\obj\Debug\Punto_Venta.pdb
+C:\Users\Ayuni\Documents\GitHub\Punto_Venta\Punto_Venta\bin\Debug\Punto_Venta.exe.config
+C:\Users\Ayuni\Documents\GitHub\Punto_Venta\Punto_Venta\obj\Debug\Punto_Venta.exe
+C:\Users\Ayuni\Documents\GitHub\Punto_Venta\Punto_Venta\obj\Debug\Punto_Venta.pdb
