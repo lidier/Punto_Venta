@@ -1,0 +1,16 @@
+C:\Users\Lidier\Documents\GitHub\punto_de_venta\Punto_Venta\Punto_Venta\bin\Debug\Punto_Venta.exe.config
+C:\Users\Lidier\Documents\GitHub\punto_de_venta\Punto_Venta\Punto_Venta\bin\Debug\Punto_Venta.exe
+C:\Users\Lidier\Documents\GitHub\punto_de_venta\Punto_Venta\Punto_Venta\bin\Debug\Punto_Venta.pdb
+C:\Users\Lidier\Documents\GitHub\punto_de_venta\Punto_Venta\Punto_Venta\obj\Debug\Punto_Venta.csprojResolveAssemblyReference.cache
+C:\Users\Lidier\Documents\GitHub\punto_de_venta\Punto_Venta\Punto_Venta\obj\Debug\Punto_Venta.Properties.Resources.resources
+C:\Users\Lidier\Documents\GitHub\punto_de_venta\Punto_Venta\Punto_Venta\obj\Debug\Punto_Venta.Splash.resources
+C:\Users\Lidier\Documents\GitHub\punto_de_venta\Punto_Venta\Punto_Venta\obj\Debug\Punto_Venta.csproj.GenerateResource.Cache
+C:\Users\Lidier\Documents\GitHub\punto_de_venta\Punto_Venta\Punto_Venta\obj\Debug\Punto_Venta.exe
+C:\Users\Lidier\Documents\GitHub\punto_de_venta\Punto_Venta\Punto_Venta\obj\Debug\Punto_Venta.pdb
+C:\Users\Lidier\Documents\GitHub\punto_de_venta\Punto_Venta\Punto_Venta\obj\Debug\Punto_Venta.Login.resources
+C:\Users\Lidier\Documents\GitHub\punto_de_venta\Punto_Venta\Punto_Venta\obj\Debug\Punto_Venta.Proveedor.AgregarProveedor.resources
+C:\Users\Lidier\Documents\GitHub\punto_de_venta\Punto_Venta\Punto_Venta\obj\Debug\Punto_Venta.Principal.resources
+C:\Users\Lidier\Documents\GitHub\punto_de_venta\Punto_Venta\Punto_Venta\obj\Debug\Punto_Venta.Cliente.AgregarCliente.resources
+C:\Users\Lidier\Documents\Visual Studio 2013\Projects\Punto_Venta\Punto_Venta\bin\Debug\Punto_Venta.exe.config
+C:\Users\Lidier\Documents\Visual Studio 2013\Projects\Punto_Venta\Punto_Venta\obj\Debug\Punto_Venta.exe
+C:\Users\Lidier\Documents\Visual Studio 2013\Projects\Punto_Venta\Punto_Venta\obj\Debug\Punto_Venta.pdb
