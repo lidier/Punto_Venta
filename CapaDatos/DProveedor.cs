@@ -86,7 +86,7 @@ namespace CapaDatos
                 SqlParameter ParIdProveedor = new SqlParameter();
                 ParIdProveedor.ParameterName = "@proveedorId";
                 ParIdProveedor.SqlDbType = SqlDbType.Int;
-                ParIdProveedor.Direction = ParameterDirection.Output;
+                ParIdProveedor.Value = proveedor.idProveedor;
                 SqlCmd.Parameters.Add(ParIdProveedor);
 
                 SqlParameter ParNombreComercial = new SqlParameter();
@@ -117,6 +117,9 @@ namespace CapaDatos
                 ParApellido2.Value = proveedor.apellido2;
                 SqlCmd.Parameters.Add(ParNombreComercial);
 
+                //ejecutar
+                rpta = SqlCmd.ExecuteNonQuery() == 1 ? "Ok" : "No se ingreso registro";
+
             }
             catch (Exception ex)
             {
@@ -133,32 +136,189 @@ namespace CapaDatos
             return rpta;
         }
         //metodo editar
-        /*
+        
         public string editar(DProveedor proveedor)
         {
+            string rpta = "";
+            SqlConnection SqlCon = new SqlConnection();
+            try
+            {
+                SqlCon.ConnectionString = Conexion.Cn;
+                SqlCon.Open();
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "pa_editarProveedores";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
 
+                SqlParameter ParIdProveedor = new SqlParameter();
+                ParIdProveedor.ParameterName = "@proveedorId";
+                ParIdProveedor.SqlDbType = SqlDbType.Int;
+                ParIdProveedor.Value = proveedor.idProveedor;
+                SqlCmd.Parameters.Add(ParIdProveedor);
+
+                SqlParameter ParNombreComercial = new SqlParameter();
+                ParNombreComercial.ParameterName = "@nombreComercial";
+                ParNombreComercial.SqlDbType = SqlDbType.VarChar;
+                ParNombreComercial.Size = 20;
+                ParNombreComercial.Value = proveedor.nombre_comercial;
+                SqlCmd.Parameters.Add(ParNombreComercial);
+
+                SqlParameter ParNombre = new SqlParameter();
+                ParNombre.ParameterName = "@nombre";
+                ParNombre.SqlDbType = SqlDbType.VarChar;
+                ParNombre.Size = 15;
+                ParNombre.Value = proveedor.nombre_proveedor;
+                SqlCmd.Parameters.Add(ParNombre);
+
+                SqlParameter ParApellido1 = new SqlParameter();
+                ParApellido1.ParameterName = "@apellido1";
+                ParApellido1.SqlDbType = SqlDbType.VarChar;
+                ParApellido1.Size = 20;
+                ParApellido1.Value = proveedor.apellido1;
+                SqlCmd.Parameters.Add(ParApellido1);
+
+                SqlParameter ParApellido2 = new SqlParameter();
+                ParApellido2.ParameterName = "@apellido2";
+                ParApellido2.SqlDbType = SqlDbType.VarChar;
+                ParApellido2.Size = 20;
+                ParApellido2.Value = proveedor.apellido2;
+                SqlCmd.Parameters.Add(ParNombreComercial);
+
+                //ejecutar
+                rpta = SqlCmd.ExecuteNonQuery() == 1 ? "Ok" : "No se actualizo registro";
+
+            }
+            catch (Exception ex)
+            {
+
+                rpta = ex.Message;
+            }
+            finally
+            {
+
+                if (SqlCon.State == ConnectionState.Open)
+                    SqlCon.Close();
+
+            }
+            return rpta;
         }
+        
         //metodo eliminar
 
         public string eliminar(DProveedor proveedor)
         {
+            string rpta = "";
+            SqlConnection SqlCon = new SqlConnection();
+            try
+            {
+                SqlCon.ConnectionString = Conexion.Cn;
+                SqlCon.Open();
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "pa_eliminarProveedores";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
 
+                SqlParameter ParIdProveedor = new SqlParameter();
+                ParIdProveedor.ParameterName = "@proveedorId";
+                ParIdProveedor.SqlDbType = SqlDbType.Int;
+                ParIdProveedor.Value = proveedor.idProveedor;
+                SqlCmd.Parameters.Add(ParIdProveedor);
+
+                SqlParameter ParNombreComercial = new SqlParameter();
+                ParNombreComercial.ParameterName = "@nombreComercial";
+                ParNombreComercial.SqlDbType = SqlDbType.VarChar;
+                ParNombreComercial.Size = 20;
+                ParNombreComercial.Value = proveedor.nombre_comercial;
+                SqlCmd.Parameters.Add(ParNombreComercial);
+
+                //ejecutar
+                rpta = SqlCmd.ExecuteNonQuery() == 1 ? "Ok" : "No se actualizo registro";
+
+            }
+            catch (Exception ex)
+            {
+
+                rpta = ex.Message;
+            }
+            finally
+            {
+
+                if (SqlCon.State == ConnectionState.Open)
+                    SqlCon.Close();
+
+            }
+            return rpta;
         }
+        
         //metodo mostrar
 
         public DataTable mostrar()
         {
+         DataTable DtResultado = new DataTable("proveedor");
+        SqlConnection SqlCon = new SqlConnection();
+        try
+        {
+            //1. Establecer la cadena de conexion
+            SqlCon.ConnectionString = Conexion.Cn;
+
+            //2. Establecer el comando
+            SqlCommand SqlCmd = new SqlCommand();
+            SqlCmd.Connection = SqlCon;//La conexión que va a usar el comando
+            SqlCmd.CommandText = "pa_";//El comando a ejecutar
+            SqlCmd.CommandType = CommandType.StoredProcedure;
+            //Decirle al comando que va a ejecutar una sentencia SQL
+
+            //3. No hay parámetros
+
+            //4. El DataAdapter que va a ejecutar el comando y
+            //es el encargado de llena el DataTable
+            SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+            SqlDat.Fill(DtResultado);//Llenamos el DataTable
+        }
+        catch (Exception ex)
+        {
+            DtResultado = null;
+           
+        }
+        return DtResultado; 
 
         }
-        public DataTable buscarNombre(string nombre)
+        public DataTable buscarNombre(DProveedor proveedor)
         {
+            DataTable DtResultado = new DataTable("categoria");
+            SqlConnection SqlCon = new SqlConnection();
+            try
+            {
+                //1. Establecer la cadena de conexion
+                SqlCon.ConnectionString = Conexion.Cn;
 
+                //2. Establecer el comando
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;//La conexión que va a usar el comando
+                SqlCmd.CommandText = "pa";//El comando a ejecutar
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+                //Decirle al comando que va a ejecutar una sentencia SQL
+
+                //3.Enviamos wl parámetro de Búsqueda
+                SqlParameter ParTextoBuscar = new SqlParameter();
+                ParTextoBuscar.ParameterName = "@textobuscar";
+                ParTextoBuscar.SqlDbType = SqlDbType.VarChar;
+                ParTextoBuscar.Size = 50;
+                ParTextoBuscar.Value = proveedor.TextoBuscar;
+                SqlCmd.Parameters.Add(ParTextoBuscar);
+
+                //4. El DataAdapter que va a ejecutar el comando y
+                //es el encargado de llena el DataTable
+                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                SqlDat.Fill(DtResultado);//Llenamos el DataTable
+            }
+            catch (Exception ex)
+            {
+                DtResultado = null;
+
+            }
+            return DtResultado;
         }
-        public DataTable buscarId(string id)
-        {
-
-        }*/
-
-
+     
     }
 }
