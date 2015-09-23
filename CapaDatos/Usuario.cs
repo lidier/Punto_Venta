@@ -1,7 +1,28 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Data.SqlClient;
+
 namespace CapaDatos
+{
+    public class Usuario
+    {
+
+        /*private string usuario;
+        private string password;
+
+        public Usuario()
+        {
+            usuario = string.Empty;
+            password = string.Empty;
+            this.sql = string.Empty;
+        }
+
+        public string Usuarios
+        {
+            get { return this.usuario; }
             set { this.usuario = value; }
         }
 
@@ -33,7 +54,6 @@ namespace CapaDatos
             this.cnn.Close();
             return resultado;
 
-        }
+        }*/
     }
 }
-
