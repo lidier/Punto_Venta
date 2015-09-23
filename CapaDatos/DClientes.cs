@@ -16,6 +16,7 @@ namespace CapaDatos
         private string apellido2;
         private DateTime fechaNacimiento;
         private string estado;
+        private string textoBuscar;
 
         public int id_Cliente {
 
@@ -53,6 +54,12 @@ namespace CapaDatos
         {
             get { return estado; }
             set { estado = value; }
+        }
+
+        public string TextoBuscar
+        {
+            get { return textoBuscar; }
+            set { textoBuscar = value; }
         }
 
         //construtor Vacio
@@ -269,16 +276,46 @@ namespace CapaDatos
                 sqlCmd.CommandType = CommandType.StoredProcedure;
 
                 SqlDataAdapter sqlData = new SqlDataAdapter(sqlCmd);
+                sqlData.Fill(tablaResultado);
             }
             catch (Exception ex)
             {
-
+                tablaResultado = null;
             }
+
+            return tablaResultado;
         }
 
         //Metodo Buscar
         public DataTable BuscarNombre(DClientes cliente)
         {
+            DataTable tablaResultado = new DataTable("Clientes");
+            SqlConnection sqlcon = new SqlConnection();
+
+            try
+            {
+                sqlcon.ConnectionString = Conexion.Cn;
+                SqlCommand sqlCmd = new SqlCommand();
+                sqlCmd.Connection = sqlcon;
+                sqlCmd.CommandText = "pa_mostrarCliente";
+                sqlCmd.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter ParBuscarCliente = new SqlParameter();
+                ParBuscarCliente.ParameterName = "@textoBuscar";
+                ParBuscarCliente.SqlDbType = SqlDbType.VarChar;
+                ParBuscarCliente.Size = 50;
+                ParBuscarCliente.Value = cliente.TextoBuscar;
+                sqlCmd.Parameters.Add(ParBuscarCliente);
+
+                SqlDataAdapter sqlData = new SqlDataAdapter(sqlCmd);
+                sqlData.Fill(tablaResultado);
+            }
+            catch (Exception ex)
+            {
+                tablaResultado = null;
+            }
+
+            return tablaResultado;
         }
 
     }
