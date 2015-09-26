@@ -65,7 +65,7 @@ namespace CapaDatos
             this.nombre_comercial = nombre_comercial;
             this.apellido1 = apellido1;
             this.apellido2 = apellido2;
-            this.TextoBuscar = _TextoBuscar;
+            this._TextoBuscar = _TextoBuscar;
         }
 
         //metodo insertar
