@@ -45,6 +45,7 @@
     <Compile Include="DEmpleado.cs" />
     <Compile Include="DMarca.cs" />
     <Compile Include="DProveedor.cs" />
+    <Compile Include="Email.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Usuario.cs" />
   </ItemGroup>

@@ -8,14 +8,14 @@ using System.Data.SqlClient;
 
 namespace CapaDatos
 {
-    class DClientes
+     public  class DClientes
     {
         private int idCliente;
         private string nombreCliente;
         private string apellido1;
         private string apellido2;
         private DateTime fechaNacimiento;
-        private string estado;
+        private int estado;
         private string textoBuscar;
 
         public int id_Cliente {
@@ -50,7 +50,7 @@ namespace CapaDatos
             set { fechaNacimiento = value; }
         }
 
-        public string Estado
+        public int Estado
         {
             get { return estado; }
             set { estado = value; }
@@ -128,8 +128,7 @@ namespace CapaDatos
 
                 SqlParameter ParEstado = new SqlParameter();
                 ParEstado.ParameterName = "@estado";
-                ParEstado.SqlDbType = SqlDbType.VarChar;
-                ParEstado.Size = 30;
+                ParEstado.SqlDbType = SqlDbType.Int;
                 ParEstado.Value = cliente.Estado;
                 sqlCmd.Parameters.Add(ParEstado);
 
@@ -200,8 +199,7 @@ namespace CapaDatos
 
                 SqlParameter ParEstado = new SqlParameter();
                 ParEstado.ParameterName = "@estado";
-                ParEstado.SqlDbType = SqlDbType.VarChar;
-                ParEstado.Size = 30;
+                ParEstado.SqlDbType = SqlDbType.Int;
                 ParEstado.Value = cliente.Estado;
                 sqlCmd.Parameters.Add(ParEstado);
 

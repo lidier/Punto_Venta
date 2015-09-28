@@ -224,9 +224,9 @@ namespace CapaDatos
             return rstp;
         }
 
-        public DataTable mostrar()
+        /*public DataTable mostrar()
         {
 
-        }
+        }*/
     }
 }
