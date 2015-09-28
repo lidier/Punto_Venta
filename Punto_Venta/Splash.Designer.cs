@@ -30,17 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Splash));
-            this.Progreso = new System.Windows.Forms.ProgressBar();
             this.Tiempo = new System.Windows.Forms.Timer(this.components);
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.SuspendLayout();
-            // 
-            // Progreso
-            // 
-            this.Progreso.Location = new System.Drawing.Point(61, 316);
-            this.Progreso.Name = "Progreso";
-            this.Progreso.Size = new System.Drawing.Size(573, 10);
-            this.Progreso.TabIndex = 0;
             // 
             // Tiempo
             // 
@@ -50,10 +42,11 @@
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(3, 283);
+            this.progressBar1.Location = new System.Drawing.Point(28, 237);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(690, 12);
+            this.progressBar1.Size = new System.Drawing.Size(393, 10);
             this.progressBar1.TabIndex = 1;
+            this.progressBar1.Click += new System.EventHandler(this.progressBar1_Click);
             // 
             // Splash
             // 
@@ -61,9 +54,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(695, 338);
+            this.ClientSize = new System.Drawing.Size(448, 259);
             this.Controls.Add(this.progressBar1);
-            this.Controls.Add(this.Progreso);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Splash";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -74,8 +66,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.ProgressBar Progreso;
         private System.Windows.Forms.Timer Tiempo;
         private System.Windows.Forms.ProgressBar progressBar1;
     }

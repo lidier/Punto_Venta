@@ -38,7 +38,15 @@ namespace Punto_Venta
         {
 
         }
-            
-       
+
+        private void buscarToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            new buscar().Show();
+        }
+
+        private void cerrarCesionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -21,7 +21,7 @@ namespace Punto_Venta
         {
             this.progressBar1.Increment(1);
 
-            if (progressBar1.Value == 100)
+            if (progressBar1.Value == 100.2)
             {
                 this.Tiempo.Stop();
                 this.Close();
@@ -30,6 +30,11 @@ namespace Punto_Venta
         }
 
         private void Splash_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void progressBar1_Click(object sender, EventArgs e)
         {
 
         }
