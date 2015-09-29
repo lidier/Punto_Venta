@@ -43,11 +43,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label2.Location = new System.Drawing.Point(18, 256);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(107, 22);
+            this.label2.Size = new System.Drawing.Size(118, 22);
             this.label2.TabIndex = 1;
             this.label2.Text = "Contraseña";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -99,11 +99,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.Location = new System.Drawing.Point(53, 211);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 22);
+            this.label1.Size = new System.Drawing.Size(82, 22);
             this.label1.TabIndex = 6;
             this.label1.Text = "Usuario";
             // 
@@ -121,7 +121,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SeaGreen;
+            this.BackColor = System.Drawing.Color.Teal;
             this.ClientSize = new System.Drawing.Size(294, 347);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
