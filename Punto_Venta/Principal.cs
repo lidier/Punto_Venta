@@ -53,5 +53,15 @@ namespace Punto_Venta
         {
             new Vcliente().Show();
         }
+
+        private void proveedoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void facturaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Vfactura().Show();
+        }
     }
 }

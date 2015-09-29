@@ -107,6 +107,12 @@
     <Compile Include="Vcliente.Designer.cs">
       <DependentUpon>Vcliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vfactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vfactura.Designer.cs">
+      <DependentUpon>Vfactura.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="buscar.resx">
       <DependentUpon>buscar.cs</DependentUpon>
     </EmbeddedResource>
@@ -140,6 +146,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vcliente.resx">
       <DependentUpon>Vcliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vfactura.resx">
+      <DependentUpon>Vfactura.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
