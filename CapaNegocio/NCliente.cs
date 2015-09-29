@@ -44,9 +44,16 @@ namespace CapaNegocio
             return obj.Eliminar(obj);
         }
 
-        public DataTable mostrar()
+        public static DataTable mostrar()
         {
-            return new DClientes
+            return new DClientes().Mostrar();
+        }
+
+        public static DataTable buscarCliente(string textoBuscar)
+        {
+            DClientes obj = new DClientes();
+            obj.TextoBuscar = textoBuscar;
+            return obj.BuscarNombre(obj);
         }
 
     }
