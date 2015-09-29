@@ -36,5 +36,10 @@ namespace Punto_Venta
         {
 
         }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

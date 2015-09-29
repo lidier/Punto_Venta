@@ -48,5 +48,10 @@ namespace Punto_Venta
         {
             this.Close();
         }
+
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

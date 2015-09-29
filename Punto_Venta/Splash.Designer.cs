@@ -59,7 +59,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Splash";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Splash";
+            this.Text = "Cargando datos";
             this.Load += new System.EventHandler(this.Splash_Load);
             this.ResumeLayout(false);
 
