@@ -63,11 +63,11 @@
     <Compile Include="Cliente\AgregarCliente.Designer.cs">
       <DependentUpon>AgregarCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="clientesFrm.cs">
+    <Compile Include="FormCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="clientesFrm.Designer.cs">
-      <DependentUpon>clientesFrm.cs</DependentUpon>
+    <Compile Include="FormCliente.Designer.cs">
+      <DependentUpon>FormCliente.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -101,14 +101,20 @@
     <Compile Include="Splash.Designer.cs">
       <DependentUpon>Splash.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vcliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vcliente.Designer.cs">
+      <DependentUpon>Vcliente.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="buscar.resx">
       <DependentUpon>buscar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Cliente\AgregarCliente.resx">
       <DependentUpon>AgregarCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="clientesFrm.resx">
-      <DependentUpon>clientesFrm.cs</DependentUpon>
+    <EmbeddedResource Include="FormCliente.resx">
+      <DependentUpon>FormCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -131,6 +137,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Splash.resx">
       <DependentUpon>Splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vcliente.resx">
+      <DependentUpon>Vcliente.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -105,6 +105,7 @@
             this.ClientSize = new System.Drawing.Size(857, 508);
             this.Controls.Add(this.menuStrip1);
             this.Name = "Principal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Tienda";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

@@ -51,7 +51,7 @@ namespace Punto_Venta
 
         private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            new Vcliente().Show();
         }
     }
 }
