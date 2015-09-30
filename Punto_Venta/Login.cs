@@ -38,8 +38,8 @@ namespace Punto_Venta
         {
             
             Principal prin = new Principal();
-            prin.Show();
             this.Hide();
+            prin.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
