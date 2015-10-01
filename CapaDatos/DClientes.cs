@@ -74,7 +74,7 @@ namespace CapaDatos
             this.Apellido1 = apellido1;
             this.Apellido2 = apellido2;
             this.Fecha = fechaNacimiento;
-            this.Estado = estado;
+            //this.Estado = estado;
         }
 
         //Metodo Insertar

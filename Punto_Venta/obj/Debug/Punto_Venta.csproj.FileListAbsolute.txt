@@ -26,14 +26,11 @@ C:\Users\luizjo\Documents\GitHub\Punto_Venta\Punto_Venta\obj\Debug\Punto_Venta.p
 C:\Users\luizjo\Documents\GitHub\Punto_Venta\Punto_Venta\bin\Debug\Punto_Venta.exe
 C:\Users\luizjo\Documents\GitHub\Punto_Venta\Punto_Venta\bin\Debug\Punto_Venta.pdb
 C:\Users\luizjo\Documents\GitHub\Punto_Venta\Punto_Venta\obj\Debug\Punto_Venta.csprojResolveAssemblyReference.cache
-C:\Users\luizjo\Documents\GitHub\Punto_Venta\Punto_Venta\obj\Debug\Punto_Venta.Cliente.AgregarCliente.resources
 C:\Users\luizjo\Documents\GitHub\Punto_Venta\Punto_Venta\obj\Debug\Punto_Venta.Login.resources
 C:\Users\luizjo\Documents\GitHub\Punto_Venta\Punto_Venta\obj\Debug\Punto_Venta.Properties.Resources.resources
-C:\Users\luizjo\Documents\GitHub\Punto_Venta\Punto_Venta\obj\Debug\Punto_Venta.Proveedor.AgregarProveedor.resources
 C:\Users\luizjo\Documents\GitHub\Punto_Venta\Punto_Venta\obj\Debug\Punto_Venta.Principal.resources
 C:\Users\luizjo\Documents\GitHub\Punto_Venta\Punto_Venta\obj\Debug\Punto_Venta.Splash.resources
 C:\Users\luizjo\Documents\GitHub\Punto_Venta\Punto_Venta\obj\Debug\Punto_Venta.csproj.GenerateResource.Cache
-C:\Users\luizjo\Documents\GitHub\Punto_Venta\Punto_Venta\obj\Debug\Punto_Venta.buscar.resources
-C:\Users\luizjo\Documents\GitHub\Punto_Venta\Punto_Venta\obj\Debug\Punto_Venta.Clientes.resources
 C:\Users\luizjo\Documents\GitHub\Punto_Venta\Punto_Venta\obj\Debug\Punto_Venta.Vcliente.resources
 C:\Users\luizjo\Documents\GitHub\Punto_Venta\Punto_Venta\obj\Debug\Punto_Venta.Vfactura.resources
+C:\Users\luizjo\Documents\GitHub\Punto_Venta\Punto_Venta\obj\Debug\Punto_Venta.Vbuscar.resources
