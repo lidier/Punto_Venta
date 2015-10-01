@@ -56,17 +56,11 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="buscar.cs">
+    <Compile Include="Vbuscar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="buscar.Designer.cs">
-      <DependentUpon>buscar.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormCliente.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormCliente.Designer.cs">
-      <DependentUpon>FormCliente.cs</DependentUpon>
+    <Compile Include="Vbuscar.Designer.cs">
+      <DependentUpon>Vbuscar.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -105,11 +99,8 @@
     <Compile Include="Vfactura.Designer.cs">
       <DependentUpon>Vfactura.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="buscar.resx">
-      <DependentUpon>buscar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormCliente.resx">
-      <DependentUpon>FormCliente.cs</DependentUpon>
+    <EmbeddedResource Include="Vbuscar.resx">
+      <DependentUpon>Vbuscar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

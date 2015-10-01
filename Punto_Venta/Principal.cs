@@ -15,6 +15,7 @@ namespace Punto_Venta
     {
         private Vfactura view_factura = new Vfactura();
         private Vcliente view_cliente = new Vcliente();
+        private Vbuscar view_buscar = new Vbuscar();
 
 
         public Principal()
@@ -24,7 +25,7 @@ namespace Punto_Venta
 
         private void buscarToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            new buscar().Show();
+            new Vbuscar().Show();
         }
 
         private void cerrarCesionToolStripMenuItem_Click(object sender, EventArgs e)
@@ -60,6 +61,19 @@ namespace Punto_Venta
             if(view_factura.Focused == false)
             {
                 view_factura.BringToFront();
+            }
+        }
+
+        private void buscarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (view_buscar.IsDisposed)
+            {
+                view_buscar = new Vbuscar();
+            }
+            view_buscar.Show();
+            if (view_buscar.Focused == false)
+            {
+                view_buscar.BringToFront();
             }
         }
     }

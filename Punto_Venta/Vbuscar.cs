@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Punto_Venta
 {
-    public partial class buscar : Form
+    public partial class Vbuscar : Form
     {
-        public buscar()
+        public Vbuscar()
         {
             InitializeComponent();
         }
