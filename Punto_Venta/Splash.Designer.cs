@@ -52,7 +52,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
-            this.BackgroundImage = global::Punto_Venta.Properties.Resources.wave;
+            this.BackgroundImage = global::Punto_Venta.Properties.Resources.wave5_5;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(448, 259);
             this.Controls.Add(this.progressBar1);

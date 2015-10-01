@@ -42,7 +42,7 @@
             // 
             // menuStrip1
             // 
-            this.menuStrip1.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.menuStrip1.BackColor = System.Drawing.Color.Gray;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.clientesToolStripMenuItem,
             this.proveedoresToolStripMenuItem,
@@ -60,6 +60,7 @@
             // clientesToolStripMenuItem
             // 
             this.clientesToolStripMenuItem.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clientesToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.clientesToolStripMenuItem.Image = global::Punto_Venta.Properties.Resources.Clientes;
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
             this.clientesToolStripMenuItem.Size = new System.Drawing.Size(99, 23);
@@ -69,6 +70,7 @@
             // proveedoresToolStripMenuItem
             // 
             this.proveedoresToolStripMenuItem.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.proveedoresToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.proveedoresToolStripMenuItem.Name = "proveedoresToolStripMenuItem";
             this.proveedoresToolStripMenuItem.Size = new System.Drawing.Size(119, 23);
             this.proveedoresToolStripMenuItem.Text = "Proveedores";
@@ -77,6 +79,7 @@
             // facturaToolStripMenuItem
             // 
             this.facturaToolStripMenuItem.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.facturaToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.facturaToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("facturaToolStripMenuItem.Image")));
             this.facturaToolStripMenuItem.Name = "facturaToolStripMenuItem";
             this.facturaToolStripMenuItem.Size = new System.Drawing.Size(95, 23);
@@ -86,6 +89,7 @@
             // marcasToolStripMenuItem
             // 
             this.marcasToolStripMenuItem.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.marcasToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.marcasToolStripMenuItem.Name = "marcasToolStripMenuItem";
             this.marcasToolStripMenuItem.Size = new System.Drawing.Size(76, 23);
             this.marcasToolStripMenuItem.Text = "Marcas";
@@ -93,6 +97,7 @@
             // productosToolStripMenuItem
             // 
             this.productosToolStripMenuItem.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.productosToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.productosToolStripMenuItem.Name = "productosToolStripMenuItem";
             this.productosToolStripMenuItem.Size = new System.Drawing.Size(101, 23);
             this.productosToolStripMenuItem.Text = "Productos";
@@ -100,6 +105,7 @@
             // buscarToolStripMenuItem
             // 
             this.buscarToolStripMenuItem.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buscarToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.buscarToolStripMenuItem.Name = "buscarToolStripMenuItem";
             this.buscarToolStripMenuItem.Size = new System.Drawing.Size(76, 23);
             this.buscarToolStripMenuItem.Text = "Buscar";
@@ -107,6 +113,7 @@
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.salirToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
             this.salirToolStripMenuItem.Size = new System.Drawing.Size(55, 23);
             this.salirToolStripMenuItem.Text = "Salir";
@@ -116,10 +123,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
-            this.BackgroundImage = global::Punto_Venta.Properties.Resources.wave;
+            this.BackgroundImage = global::Punto_Venta.Properties.Resources.wave5_5;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(813, 458);
             this.Controls.Add(this.menuStrip1);
+            this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.ImeMode = System.Windows.Forms.ImeMode.Off;
