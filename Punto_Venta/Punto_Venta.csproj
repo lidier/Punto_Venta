@@ -127,14 +127,8 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="Proveedor\AgregarProveedor.resx">
       <DependentUpon>AgregarProveedor.cs</DependentUpon>
     </EmbeddedResource>
@@ -168,6 +162,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Proveedor\imgProv\FONDO6agua72.jpg" />
+    <None Include="Resources\wave-02.jpg" />
+    <None Include="Resources\borrar.png" />
+    <None Include="Resources\Anadir.png" />
+    <None Include="Resources\usuario1.png" />
+    <None Include="Resources\Factura.png" />
+    <None Include="Resources\Cuidado.png" />
+    <None Include="Resources\Clientes.png" />
     <None Include="Resources\png\1433015524_Save_as.png" />
     <None Include="Resources\png\1433015923_Bitmap_editor.png" />
     <None Include="Resources\png\1433014092_Work_area.png" />

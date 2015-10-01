@@ -78,6 +78,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.tabPage2.Controls.Add(this.dateTimePicker1);
             this.tabPage2.Controls.Add(this.label10);
             this.tabPage2.Controls.Add(this.textBox2);
@@ -100,8 +101,7 @@
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(627, 296);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Agregar cliente";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.tabPage2.Text = "Todas las facturas";
             // 
             // dateTimePicker1
             // 
@@ -252,6 +252,7 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.tabPage1.Controls.Add(this.dataList);
             this.tabPage1.Controls.Add(this.chkEliminar);
             this.tabPage1.Controls.Add(this.btnImprimir);
@@ -265,8 +266,7 @@
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(627, 296);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Todos los cllientes";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.tabPage1.Text = "Nueva factura";
             // 
             // dataList
             // 
