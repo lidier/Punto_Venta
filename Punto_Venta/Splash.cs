@@ -21,7 +21,7 @@ namespace Punto_Venta
         {
             this.progressBar1.Increment(1);
 
-            if (progressBar1.Value == 100.2)
+            if (progressBar1.Value == 100)
             {
                 this.Tiempo.Stop();
                 this.Close();

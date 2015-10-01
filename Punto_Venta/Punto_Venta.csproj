@@ -157,11 +157,10 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\icons\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Proveedor\imgProv\FONDO6agua72.jpg" />
+    <Content Include="Resources\intayra_D1.png" />
     <None Include="Resources\wave-02.jpg" />
     <None Include="Resources\borrar.png" />
     <None Include="Resources\Anadir.png" />
@@ -169,11 +168,11 @@
     <None Include="Resources\Factura.png" />
     <None Include="Resources\Cuidado.png" />
     <None Include="Resources\Clientes.png" />
-    <None Include="Resources\png\1433015524_Save_as.png" />
-    <None Include="Resources\png\1433015923_Bitmap_editor.png" />
-    <None Include="Resources\png\1433014092_Work_area.png" />
-    <None Include="Resources\png\1433015526_Zoom.png" />
-    <None Include="Resources\img\login.jpg" />
+    <None Include="Resources\1433015524_Save_as.png" />
+    <None Include="Resources\1433015923_Bitmap_editor.png" />
+    <None Include="Resources\1433014092_Work_area.png" />
+    <None Include="Resources\1433015526_Zoom.png" />
+    <None Include="Resources\login.jpg" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
