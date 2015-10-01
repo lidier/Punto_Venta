@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Clientes));
             this.label1 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -41,6 +42,11 @@
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label10 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
@@ -52,15 +58,12 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataList)).BeginInit();
             this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -68,7 +71,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(278, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(122, 32);
             this.label1.TabIndex = 0;
@@ -220,6 +223,48 @@
             this.tabPage2.Text = "Agregar cliente";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(180, 132);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(146, 22);
+            this.dateTimePicker1.TabIndex = 28;
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(349, 56);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(63, 16);
+            this.label10.TabIndex = 27;
+            this.label10.Text = "Telefono";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(431, 53);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(146, 22);
+            this.textBox2.TabIndex = 26;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(431, 16);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(146, 22);
+            this.textBox1.TabIndex = 25;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(368, 22);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(44, 16);
+            this.label9.TabIndex = 24;
+            this.label9.Text = "Email";
+            // 
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(314, 206);
@@ -316,47 +361,15 @@
             this.label4.TabIndex = 12;
             this.label4.Text = "Nombre";
             // 
-            // label9
+            // pictureBox1
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(368, 22);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(44, 16);
-            this.label9.TabIndex = 24;
-            this.label9.Text = "Email";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(431, 16);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(146, 22);
-            this.textBox1.TabIndex = 25;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(431, 53);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(146, 22);
-            this.textBox2.TabIndex = 26;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(349, 56);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(63, 16);
-            this.label10.TabIndex = 27;
-            this.label10.Text = "Telefono";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(180, 132);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(146, 22);
-            this.dateTimePicker1.TabIndex = 28;
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(207, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(65, 61);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
             // Clientes
             // 
@@ -364,6 +377,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
             this.ClientSize = new System.Drawing.Size(667, 351);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -375,6 +389,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataList)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -411,5 +426,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

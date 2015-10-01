@@ -28,14 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.facturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.proveedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.marcasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.buscarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.facturaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,10 +60,20 @@
             // clientesToolStripMenuItem
             // 
             this.clientesToolStripMenuItem.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clientesToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("clientesToolStripMenuItem.Image")));
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(83, 23);
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(99, 23);
             this.clientesToolStripMenuItem.Text = "Clientes";
             this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
+            // 
+            // facturaToolStripMenuItem
+            // 
+            this.facturaToolStripMenuItem.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.facturaToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("facturaToolStripMenuItem.Image")));
+            this.facturaToolStripMenuItem.Name = "facturaToolStripMenuItem";
+            this.facturaToolStripMenuItem.Size = new System.Drawing.Size(95, 23);
+            this.facturaToolStripMenuItem.Text = "Factura";
+            this.facturaToolStripMenuItem.Click += new System.EventHandler(this.facturaToolStripMenuItem_Click);
             // 
             // proveedoresToolStripMenuItem
             // 
@@ -99,14 +110,6 @@
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
             this.salirToolStripMenuItem.Size = new System.Drawing.Size(55, 23);
             this.salirToolStripMenuItem.Text = "Salir";
-            // 
-            // facturaToolStripMenuItem
-            // 
-            this.facturaToolStripMenuItem.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.facturaToolStripMenuItem.Name = "facturaToolStripMenuItem";
-            this.facturaToolStripMenuItem.Size = new System.Drawing.Size(79, 23);
-            this.facturaToolStripMenuItem.Text = "Factura";
-            this.facturaToolStripMenuItem.Click += new System.EventHandler(this.facturaToolStripMenuItem_Click);
             // 
             // Principal
             // 
