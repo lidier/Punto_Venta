@@ -99,6 +99,12 @@
     <Compile Include="Vfactura.Designer.cs">
       <DependentUpon>Vfactura.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vproveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vproveedores.Designer.cs">
+      <DependentUpon>Vproveedores.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Vbuscar.resx">
       <DependentUpon>Vbuscar.cs</DependentUpon>
     </EmbeddedResource>
@@ -121,6 +127,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vfactura.resx">
       <DependentUpon>Vfactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vproveedores.resx">
+      <DependentUpon>Vproveedores.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -185,6 +194,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\wave6_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wave7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aceptar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Buscar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Proveedores.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnEliminar.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

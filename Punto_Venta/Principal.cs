@@ -16,6 +16,7 @@ namespace Punto_Venta
         private Vfactura view_factura = new Vfactura();
         private Vcliente view_cliente = new Vcliente();
         private Vbuscar view_buscar = new Vbuscar();
+        private Vproveedores view_probedor = new Vproveedores();
 
 
         public Principal()
@@ -48,7 +49,15 @@ namespace Punto_Venta
 
         private void proveedoresToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //view_proveedor
+            if (view_probedor.IsDisposed)
+            {
+                view_probedor = new Vproveedores();
+            }
+            view_probedor.Show();
+            if (view_probedor.Focused == false)
+            {
+                view_probedor.BringToFront();
+            }
         }
 
         private void facturaToolStripMenuItem_Click(object sender, EventArgs e)

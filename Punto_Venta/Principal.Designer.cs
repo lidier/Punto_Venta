@@ -53,7 +53,7 @@
             this.salirToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(813, 27);
+            this.menuStrip1.Size = new System.Drawing.Size(780, 27);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -71,8 +71,9 @@
             // 
             this.proveedoresToolStripMenuItem.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.proveedoresToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.proveedoresToolStripMenuItem.Image = global::Punto_Venta.Properties.Resources.Proveedores;
             this.proveedoresToolStripMenuItem.Name = "proveedoresToolStripMenuItem";
-            this.proveedoresToolStripMenuItem.Size = new System.Drawing.Size(119, 23);
+            this.proveedoresToolStripMenuItem.Size = new System.Drawing.Size(135, 23);
             this.proveedoresToolStripMenuItem.Text = "Proveedores";
             this.proveedoresToolStripMenuItem.Click += new System.EventHandler(this.proveedoresToolStripMenuItem_Click);
             // 
@@ -106,8 +107,9 @@
             // 
             this.buscarToolStripMenuItem.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buscarToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buscarToolStripMenuItem.Image = global::Punto_Venta.Properties.Resources.Buscar;
             this.buscarToolStripMenuItem.Name = "buscarToolStripMenuItem";
-            this.buscarToolStripMenuItem.Size = new System.Drawing.Size(76, 23);
+            this.buscarToolStripMenuItem.Size = new System.Drawing.Size(92, 23);
             this.buscarToolStripMenuItem.Text = "Buscar";
             this.buscarToolStripMenuItem.Click += new System.EventHandler(this.buscarToolStripMenuItem_Click);
             // 
@@ -124,16 +126,15 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
-            this.BackgroundImage = global::Punto_Venta.Properties.Resources.wave6;
+            this.BackgroundImage = global::Punto_Venta.Properties.Resources.wave7;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(813, 514);
+            this.ClientSize = new System.Drawing.Size(780, 507);
             this.Controls.Add(this.menuStrip1);
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.MaximizeBox = false;
             this.Name = "Principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Genesis";
