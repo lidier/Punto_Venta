@@ -280,7 +280,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(627, 296);
+            this.tabPage1.Size = new System.Drawing.Size(659, 342);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Todos los cllientes";
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
@@ -306,10 +306,10 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(3, 90);
+            this.tabControl1.Location = new System.Drawing.Point(12, 90);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(635, 322);
+            this.tabControl1.Size = new System.Drawing.Size(667, 368);
             this.tabControl1.TabIndex = 3;
             // 
             // tabPage2
@@ -335,7 +335,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(627, 296);
+            this.tabPage2.Size = new System.Drawing.Size(659, 342);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Agregar cliente";
             // 
@@ -367,13 +367,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Teal;
-            this.BackgroundImage = global::Punto_Venta.Properties.Resources.wave5_5;
-            this.ClientSize = new System.Drawing.Size(642, 416);
+            this.BackColor = System.Drawing.Color.White;
+            this.BackgroundImage = global::Punto_Venta.Properties.Resources.wave6;
+            this.ClientSize = new System.Drawing.Size(691, 470);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.tabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Vcliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Clientes";

@@ -76,5 +76,10 @@ namespace Punto_Venta
                 view_buscar.BringToFront();
             }
         }
+
+        private void Principal_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

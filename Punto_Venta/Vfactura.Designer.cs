@@ -245,10 +245,10 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(26, 84);
+            this.tabControl1.Location = new System.Drawing.Point(12, 84);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(635, 322);
+            this.tabControl1.Size = new System.Drawing.Size(667, 374);
             this.tabControl1.TabIndex = 6;
             // 
             // tabPage1
@@ -265,7 +265,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(627, 296);
+            this.tabPage1.Size = new System.Drawing.Size(659, 348);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Nueva factura";
             // 
@@ -282,7 +282,7 @@
             this.dataList.Name = "dataList";
             this.dataList.ReadOnly = true;
             this.dataList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataList.Size = new System.Drawing.Size(612, 205);
+            this.dataList.Size = new System.Drawing.Size(647, 257);
             this.dataList.TabIndex = 7;
             // 
             // Eliminar
@@ -363,13 +363,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Teal;
+            this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Punto_Venta.Properties.Resources.wave5_5;
-            this.ClientSize = new System.Drawing.Size(686, 413);
+            this.ClientSize = new System.Drawing.Size(691, 470);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Vfactura";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Vfactura";

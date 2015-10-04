@@ -40,23 +40,28 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(468, 35);
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MediumTurquoise;
+            this.button1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(536, 47);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(75, 28);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Buscar";
+            this.button1.Text = "&Buscar";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(158, 37);
+            this.textBox1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(226, 47);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(304, 20);
+            this.textBox1.Size = new System.Drawing.Size(304, 26);
             this.textBox1.TabIndex = 1;
             // 
             // comboBox1
             // 
+            this.comboBox1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Apartados",
@@ -66,9 +71,9 @@
             "Marcas",
             "Proveedores",
             "Productos"});
-            this.comboBox1.Location = new System.Drawing.Point(21, 36);
+            this.comboBox1.Location = new System.Drawing.Point(89, 46);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.Size = new System.Drawing.Size(121, 26);
             this.comboBox1.TabIndex = 2;
             // 
             // label3
@@ -77,7 +82,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(154, 17);
+            this.label3.Location = new System.Drawing.Point(222, 27);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(175, 19);
             this.label3.TabIndex = 7;
@@ -89,7 +94,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(17, 16);
+            this.label1.Location = new System.Drawing.Point(85, 26);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(99, 19);
             this.label1.TabIndex = 8;
@@ -104,7 +109,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(12, 98);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(548, 374);
+            this.dataGridView1.Size = new System.Drawing.Size(667, 360);
             this.dataGridView1.TabIndex = 9;
             // 
             // label2
@@ -119,12 +124,12 @@
             this.label2.TabIndex = 10;
             this.label2.Text = "Resultados de la busqueda";
             // 
-            // buscar
+            // Vbuscar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Punto_Venta.Properties.Resources.wave5_5;
-            this.ClientSize = new System.Drawing.Size(572, 484);
+            this.ClientSize = new System.Drawing.Size(691, 470);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
@@ -132,9 +137,11 @@
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
-            this.Name = "buscar";
+            this.MaximizeBox = false;
+            this.Name = "Vbuscar";
             this.RightToLeftLayout = true;
-            this.Text = "buscar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Buscar";
             this.Load += new System.EventHandler(this.buscar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
