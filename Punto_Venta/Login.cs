@@ -56,5 +56,10 @@ namespace Punto_Venta
         {
 
         }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

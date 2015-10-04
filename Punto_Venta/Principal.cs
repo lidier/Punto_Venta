@@ -16,6 +16,10 @@ namespace Punto_Venta
         private Vfactura view_factura = new Vfactura();
         private Vcliente view_cliente = new Vcliente();
         private Vbuscar view_buscar = new Vbuscar();
+<<<<<<< HEAD
+=======
+        private Vproveedores view_probedor = new Vproveedores();
+>>>>>>> origin/master
 
 
         public Principal()
@@ -24,6 +28,10 @@ namespace Punto_Venta
         }
 
         private void buscarToolStripMenuItem2_Click(object sender, EventArgs e)
+<<<<<<< HEAD
+        {
+            new Vbuscar().Show();
+=======
         {
             new Vbuscar().Show();
         }
@@ -48,8 +56,60 @@ namespace Punto_Venta
 
         private void proveedoresToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (view_probedor.IsDisposed)
+            {
+                view_probedor = new Vproveedores();
+            }
+            view_probedor.Show();
+            if (view_probedor.Focused == false)
+            {
+                view_probedor.BringToFront();
+            }
+>>>>>>> origin/master
+        }
+
+        private void facturaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if(view_factura.IsDisposed)
+            {
+                view_factura = new Vfactura();
+            }
+            view_factura.Show();
+            if(view_factura.Focused == false)
+            {
+                view_factura.BringToFront();
+            }
+        }
+
+        private void buscarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+<<<<<<< HEAD
+            if (view_cliente.IsDisposed)
+            {
+                view_cliente = new Vcliente();
+            }
+            view_cliente.Show();
+            if (view_cliente.Focused == false)
+            {
+                view_cliente.BringToFront();
+=======
+            if (view_buscar.IsDisposed)
+            {
+                view_buscar = new Vbuscar();
+            }
+            view_buscar.Show();
+            if (view_buscar.Focused == false)
+            {
+                view_buscar.BringToFront();
+>>>>>>> origin/master
+            }
+        }
+
+        private void Principal_Load(object sender, EventArgs e)
+        {
             //view_proveedor
         }
+<<<<<<< HEAD
 
         private void facturaToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -76,5 +136,7 @@ namespace Punto_Venta
                 view_buscar.BringToFront();
             }
         }
+=======
+>>>>>>> origin/master
     }
 }

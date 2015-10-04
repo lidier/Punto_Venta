@@ -44,7 +44,11 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+<<<<<<< HEAD
             this.label2.Location = new System.Drawing.Point(13, 256);
+=======
+            this.label2.Location = new System.Drawing.Point(125, 279);
+>>>>>>> origin/master
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(118, 22);
             this.label2.TabIndex = 1;
@@ -54,7 +58,11 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.textBox1.Location = new System.Drawing.Point(135, 209);
+=======
+            this.textBox1.Location = new System.Drawing.Point(247, 232);
+>>>>>>> origin/master
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(135, 29);
             this.textBox1.TabIndex = 2;
@@ -62,7 +70,11 @@
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.textBox2.Location = new System.Drawing.Point(135, 256);
+=======
+            this.textBox2.Location = new System.Drawing.Point(247, 279);
+>>>>>>> origin/master
             this.textBox2.Name = "textBox2";
             this.textBox2.PasswordChar = '*';
             this.textBox2.Size = new System.Drawing.Size(135, 29);
@@ -73,7 +85,11 @@
             this.button1.BackColor = System.Drawing.SystemColors.Highlight;
             this.button1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.Info;
+<<<<<<< HEAD
             this.button1.Location = new System.Drawing.Point(17, 304);
+=======
+            this.button1.Location = new System.Drawing.Point(111, 326);
+>>>>>>> origin/master
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(122, 31);
             this.button1.TabIndex = 4;
@@ -86,7 +102,11 @@
             this.button2.BackColor = System.Drawing.Color.Maroon;
             this.button2.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.Info;
+<<<<<<< HEAD
             this.button2.Location = new System.Drawing.Point(148, 304);
+=======
+            this.button2.Location = new System.Drawing.Point(323, 326);
+>>>>>>> origin/master
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(122, 31);
             this.button2.TabIndex = 5;
@@ -100,7 +120,11 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+<<<<<<< HEAD
             this.label1.Location = new System.Drawing.Point(48, 211);
+=======
+            this.label1.Location = new System.Drawing.Point(160, 234);
+>>>>>>> origin/master
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(82, 22);
             this.label1.TabIndex = 6;
@@ -110,7 +134,11 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::Punto_Venta.Properties.Resources.usuario1;
+<<<<<<< HEAD
             this.pictureBox1.Location = new System.Drawing.Point(52, 12);
+=======
+            this.pictureBox1.Location = new System.Drawing.Point(182, 34);
+>>>>>>> origin/master
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(178, 180);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -122,9 +150,15 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
+<<<<<<< HEAD
             this.BackgroundImage = global::Punto_Venta.Properties.Resources.wave4_5_5;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(281, 347);
+=======
+            this.BackgroundImage = global::Punto_Venta.Properties.Resources.wave7;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(540, 400);
+>>>>>>> origin/master
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
@@ -137,6 +171,7 @@
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.Login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
